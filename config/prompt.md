@@ -1,0 +1,1 @@
+Texto do prompt para envio à LLM

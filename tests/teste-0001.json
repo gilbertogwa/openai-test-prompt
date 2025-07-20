@@ -1,0 +1,14 @@
+[
+    {
+      "entrada": "Pessoas de são paulo",
+      "saida": {
+        "ufs": ["SP"]
+      }
+    },
+    {
+      "entrada": "Pessoas de são paulo",
+      "saida": {
+        "ufs": ["SP2"]
+      }
+    }    
+]

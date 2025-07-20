@@ -1,0 +1,29 @@
+{
+  "name": "llm-automated-tests",
+  "version": "1.0.0",
+  "description": "Framework de testes automatizados para APIs de LLM",
+  "main": "src/test-runner.js",
+  "scripts": {
+    "test": "node src/test-runner.js",
+    "test:debug": "set LOG_LEVEL=debug && node src/test-runner.js",
+    "test:verbose": "set VERBOSE_MODE=true && node src/test-runner.js",
+    "test:html": "set GENERATE_HTML_REPORT=true && node src/test-runner.js",
+    "test:playwright": "playwright test",
+    "validate": "node src/utils/validator.js",
+    "create:test": "node src/generators/test-generator.js",
+    "setup": "node src/setup.js",
+    "setup:config": "node src/setup.js",
+    "install:playwright": "playwright install",
+    "clean": "rmdir /s /q reports 2>nul || echo Diretório reports não existe"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.40.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": ["llm", "testing", "automation", "playwright", "api"],
+  "author": "Sua Empresa",
+  "license": "MIT"
+}
